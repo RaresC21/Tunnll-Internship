@@ -1,5 +1,5 @@
 from django.db import models
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 
 class Post(models.Model) :
     title = models.CharField(max_length = 255)
@@ -11,9 +11,10 @@ class Post(models.Model) :
 
     class Meta:
         ordering = ['-created']
+
+
+    def __unicode__(self) :
+        return u'%s' % self.title
         
-        def __unicode__(self) :
-            return u'%s' % self.title
-        
-        def get_absolute_url(self) :
-            return reverse('blog.views.post', args = [self.slug])
+    def get_absolute_url(self) :
+        return reverse('blog.views.post', args = [self.slug])
