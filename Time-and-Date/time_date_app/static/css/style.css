@@ -5,3 +5,8 @@
     background-image: url("../Images/background.jpg");
     background-size: cover;
 }
+
+.container {
+    margin:auto;
+    max-width: 800px;
+}
