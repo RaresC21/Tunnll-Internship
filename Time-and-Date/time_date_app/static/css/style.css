@@ -45,12 +45,30 @@
     box-sizing: border-box;
 }
 
+#section2 div img {
+    width: 40%;
+    margin: 1%;
+    box-sizing: border-box;
+    border-radius: 50% 50%;
+    box-shadow: black 0px 0px 5px;
+}
+
 @media screen and (max-width: 600px) {
     #headline #register {
 	float: none;
 	width: 100%;
     }
     #headline #blurb {
+	float: none;
+	width: 100%;
+    }
+
+    #section1 ul {
+	float: none;
+	width: 100%;
+    }
+
+    #section1 #datetime {
 	float: none;
 	width: 100%;
     }
