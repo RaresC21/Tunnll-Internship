@@ -3,11 +3,40 @@
     color: white;
     font-family: Roboto, sans-serif;
     background-image: url("../Images/background.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
+    overflow: hidden;
 }
 
-@media (min-width: 600px) {
+#headline #blurb {
+    float: left;
+    font-weight: 200;
+    width: 50%;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
 
+#headline #register {
+    float: right;
+    padding: 20px;
+    width: 50%;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+
+#headline br {
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    #headline #register {
+	float: none;
+	width: 100%;
+    }
+    #headline #blurb {
+	float: none;
+	width: 100%;
+    }
 }
 
 .container {
