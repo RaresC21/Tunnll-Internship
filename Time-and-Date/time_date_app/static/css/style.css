@@ -28,6 +28,23 @@
     clear: both;
 }
 
+#section1 {
+    overflow: hidden;
+}
+
+#section1 ul {
+    float: left;
+    width: 50%;
+    padding-right: 1em;
+    box-sizing: border-box;
+}
+
+#section1 #datetime {
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+}
+
 @media screen and (max-width: 600px) {
     #headline #register {
 	float: none;
