@@ -29,7 +29,7 @@ DATABASES = {
 }
 ~~~~
 
-It may be necessary to run `python manage.py migrate` first. You must be in the folder
-directly containing `manage.py` to do so.
+It may be necessary to run `python manage.py migrate` first while located in the folder
+containing the file `manage.py`
 
-To run the application, type `python manage.py runserver`
+To run the application, run `python manage.py runserver`
