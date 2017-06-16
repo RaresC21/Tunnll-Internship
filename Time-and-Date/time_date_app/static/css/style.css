@@ -57,6 +57,11 @@
     box-shadow: 0 0 5px black;
 }
 
+#section1 #time {
+    width: 100%;
+    font-size: 20px;
+}
+
 @media screen and (max-width: 600px) {
     #headline #register {
 	float: none;
